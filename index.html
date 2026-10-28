@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover elegant anti-tarnish jewellery and women's accessories from ASQUARE Jewellery And Accessories.">
+  <title>ASQUARE | Jewellery & Accessories</title>
+  <style>
+    :root {
+      --navy: #0C043B;
+      --navy2: #171044;
+      --cream: #F8F3E9;
+      --gold: #E0A040;
+      --ink: #211D2D;
+      --muted: #766F7E;
+      --white: #fffdf9;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: Georgia, "Times New Roman", serif; }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .announcement { background: var(--gold); color: var(--navy); text-align: center; padding: 9px 14px; font: 11px/1.4 Arial, sans-serif; letter-spacing: .13em; text-transform: uppercase; }
+    header { background: var(--navy); color: var(--cream); padding: 18px 5vw 14px; }
+    .topline { display: flex; align-items: center; justify-content: space-between; gap: 18px; max-width: 1200px; margin: auto; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-mark { width: 42px; height: 42px; border: 1px solid var(--gold); color: var(--gold); display: grid; place-items: center; font-size: 20px; border-radius: 50%; }
+    .brand-name { font-size: 21px; letter-spacing: .19em; line-height: 1.1; }
+    .brand-sub { font: 9px Arial, sans-serif; letter-spacing: .16em; margin-top: 5px; color: #d7c9b1; }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; font: 11px Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+    nav a:hover, .footer-links a:hover { color: var(--gold); }
+    .hero { background: var(--navy); color: var(--cream); padding: 65px 5vw 76px; overflow: hidden; }
+    .hero-inner { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 40px; }
+    .eyebrow { font: 11px Arial, sans-serif; letter-spacing: .23em; text-transform: uppercase; color: var(--gold); }
+    h1 { font-size: clamp(42px, 6vw, 76px); line-height: 1.02; font-weight: 400; margin: 20px 0; }
+    h1 em { color: var(--gold); font-weight: 400; }
+    .hero p { max-width: 480px; color: #e0d9d0; font: 15px/1.8 Arial, sans-serif; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-block; padding: 14px 20px; font: 11px Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--gold); cursor: pointer; }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-outline { color: var(--cream); }
+    .hero-art { min-height: 340px; position: relative; display: grid; place-items: center; }
+    .art-circle { width: min(34vw, 390px); aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(224,160,64,.65); background: radial-gradient(circle at 50% 40%, #34305a 0%, #19133f 48%, #0C043B 75%); display: grid; place-items: center; box-shadow: 0 0 70px rgba(224,160,64,.08); }
+    .necklace { width: 52%; height: 62%; border: 2px solid var(--gold); border-top-color: transparent; border-radius: 0 0 50% 50%; transform: translateY(-5%); position: relative; }
+    .necklace:after { content: "✦"; position: absolute; bottom: -13px; left: calc(50% - 13px); font-size: 28px; color: var(--gold); text-shadow: 0 0 14px rgba(224,160,64,.4); }
+    .art-caption { position: absolute; bottom: 2px; right: 4%; font: 10px Arial, sans-serif; letter-spacing: .16em; color: #cfc3b3; text-transform: uppercase; }
+    section { padding: 64px 5vw; }
+    .section-head { max-width: 1200px; margin: 0 auto 30px; display: flex; justify-content: space-between; align-items: end; gap: 20px; }
+    .section-head h2 { margin: 8px 0 0; font-size: clamp(30px, 4vw, 44px); font-weight: 400; }
+    .section-head p { font: 13px/1.6 Arial, sans-serif; color: var(--muted); max-width: 390px; margin: 0; }
+    .categories { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; max-width: 1200px; margin: auto; }
+    .category { background: var(--white); border: 1px solid #e9dfd1; padding: 26px 18px; min-height: 128px; transition: transform .2s, border-color .2s; }
+    .category:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .category .symbol { color: var(--gold); font-size: 24px; }
+    .category h3 { font-weight: 400; font-size: 20px; margin: 15px 0 5px; }
+    .category span { color: var(--muted); font: 11px Arial, sans-serif; }
+    .products-section { background: #fffdf9; }
+    .products { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+    .product { border: 1px solid #eee5da; background: #fff; }
+    .product-image { aspect-ratio: 4/4.7; display: grid; place-items: center; background: linear-gradient(145deg,#f5eee2,#e8dece); overflow: hidden; }
+    .product-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .placeholder { text-align: center; padding: 20px; color: #8e7d67; font: 11px/1.7 Arial,sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+    .placeholder b { display: block; font: 35px Georgia,serif; color: var(--gold); margin-bottom: 8px; }
+    .product-info { padding: 16px; }
+    .product-info h3 { font-size: 18px; font-weight: 400; margin: 0 0 8px; }
+    .price { font: 13px Arial,sans-serif; color: var(--navy); margin-bottom: 14px; }
+    .product-info .btn { padding: 11px 12px; width: 100%; text-align: center; font-size: 10px; }
+    .story { background: var(--navy); color: var(--cream); }
+    .story-inner { max-width: 980px; margin: auto; text-align: center; }
+    .story h2 { font-size: clamp(32px, 4vw, 48px); font-weight: 400; margin: 15px 0; }
+    .story p { max-width: 700px; margin: auto; color: #ddd5cc; font: 14px/1.9 Arial,sans-serif; }
+    .story .btn { margin-top: 24px; }
+    .benefits { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; text-align: center; }
+    .benefit { padding: 10px; }
+    .benefit b { display: block; font-weight: 400; font-size: 20px; margin: 12px 0 7px; }
+    .benefit p { color: var(--muted); font: 12px/1.7 Arial,sans-serif; margin: 0; }
+    footer { background: #080225; color: var(--cream); padding: 42px 5vw 22px; }
+    .footer-inner { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+    footer p { color: #c9c0d0; font: 12px/1.8 Arial,sans-serif; max-width: 360px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; font: 11px Arial,sans-serif; }
+    .copyright { max-width: 1200px; margin: 30px auto 0; border-top: 1px solid #2b244c; padding-top: 17px; color: #aaa1ba; font: 10px Arial,sans-serif; letter-spacing: .08em; }
+    .notice { max-width: 1200px; margin: 18px auto 0; font: 11px/1.7 Arial,sans-serif; color: #b8adca; }
+    @media (max-width: 760px) {
+      .topline { align-items: flex-start; flex-direction: column; }
+      nav { gap: 14px; }
+      .hero { padding-top: 46px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 12px; }
+      .hero-art { min-height: 260px; }
+      .art-circle { width: min(68vw, 300px); }
+      .art-caption { right: 8%; }
+      section { padding: 48px 5vw; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .categories { grid-template-columns: repeat(2,1fr); gap: 10px; }
+      .products { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+      .product-info { padding: 12px; }
+      .product-info h3 { font-size: 16px; }
+      .benefits { grid-template-columns: 1fr; gap: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">Thoughtfully chosen jewellery · Made for your everyday elegance</div>
+  <header>
+    <div class="topline">
+      <a class="brand" href="#home" aria-label="ASQUARE home">
+        <div class="brand-mark">A</div>
+        <div><div class="brand-name">ASQUARE</div><div class="brand-sub">JEWELLERY AND ACCESSORIES</div></div>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#collections">Collections</a><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">A little sparkle, a lot of you</div>
+          <h1>Jewellery that feels <em>like you.</em></h1>
+          <p>Discover thoughtfully selected anti-tarnish jewellery and beautiful accessories for everyday moments, celebrations and gifting.</p>
+          <div class="actions"><a class="btn btn-gold" href="#shop">Explore the collection</a><a class="btn btn-outline" href="#about">Our story</a></div>
+        </div>
+        <div class="hero-art" aria-label="Decorative gold necklace illustration">
+          <div class="art-circle"><div class="necklace"></div></div>
+          <div class="art-caption">Simple pieces. Lasting style.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections">
+      <div class="section-head"><div><div class="eyebrow">Find your favourite</div><h2>Shop by collection</h2></div><p>Little details can make a look unforgettable. Find the pieces that feel most like you.</p></div>
+      <div class="categories">
+        <a class="category" href="#shop"><div class="symbol">✧</div><h3>Necklaces</h3><span>Everyday to statement</span></a>
+        <a class="category" href="#shop"><div class="symbol">◇</div><h3>Earrings</h3><span>Subtle or standout</span></a>
+        <a class="category" href="#shop"><div class="symbol">◌</div><h3>Bracelets</h3><span>Finishing touches</span></a>
+        <a class="category" href="#shop"><div class="symbol">✦</div><h3>Accessories</h3><span>Little things you love</span></a>
+      </div>
+    </section>
+
+    <section class="products-section" id="shop">
+      <div class="section-head"><div><div class="eyebrow">The ASQUARE edit</div><h2>Featured pieces</h2></div><p>These are starter placeholders. Replace the names, photos and prices with your actual products before publishing.</p></div>
+      <div class="products">
+        <article class="product">
+          <div class="product-image"><div class="placeholder"><b>✧</b>Add your necklace photo<br>product-1.jpg</div></div>
+          <div class="product-info"><h3>Floral Charm Necklace</h3><div class="price">Price: update before publishing</div><a class="btn" href="https://wa.me/916301239070?text=Hi%20ASQUARE%2C%20I%27m%20interested%20in%20the%20Floral%20Charm%20Necklace." target="_blank" rel="noopener">Ask to order</a></div>
+        </article>
+        <article class="product">
+          <div class="product-image"><div class="placeholder"><b>◇</b>Add your earrings photo<br>product-2.jpg</div></div>
+          <div class="product-info"><h3>Kashmiri Earrings</h3><div class="price">Price: update before publishing</div><a class="btn" href="https://wa.me/916301239070?text=Hi%20ASQUARE%2C%20I%27m%20interested%20in%20the%20Kashmiri%20Earrings." target="_blank" rel="noopener">Ask to order</a></div>
+        </article>
+        <article class="product">
+          <div class="product-image"><div class="placeholder"><b>◌</b>Add your bracelet photo<br>product-3.jpg</div></div>
+          <div class="product-info"><h3>Everyday Bracelet</h3><div class="price">Price: update before publishing</div><a class="btn" href="https://wa.me/916301239070?text=Hi%20ASQUARE%2C%20I%27m%20interested%20in%20the%20Everyday%20Bracelet." target="_blank" rel="noopener">Ask to order</a></div>
+        </article>
+        <article class="product">
+          <div class="product-image"><div class="placeholder"><b>✦</b>Add your watch photo<br>product-4.jpg</div></div>
+          <div class="product-info"><h3>Serpent Watch</h3><div class="price">Price: update before publishing</div><a class="btn" href="https://wa.me/916301239070?text=Hi%20ASQUARE%2C%20I%27m%20interested%20in%20the%20Serpent%20Watch." target="_blank" rel="noopener">Ask to order</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-inner"><div class="eyebrow">A note from ASQUARE</div><h2>Little details. Beautifully you.</h2><p>ASQUARE Jewellery And Accessories is about finding those special finishing touches — pieces you can style your own way, gift to someone special, or wear just because. We’re growing one thoughtful collection and one happy customer at a time.</p><a class="btn btn-gold" href="https://www.instagram.com/asquare.jewellery/" target="_blank" rel="noopener">Follow our journey</a></div>
+    </section>
+
+    <section>
+      <div class="benefits">
+        <div class="benefit"><div class="symbol">✧</div><b>Thoughtfully selected</b><p>Explore jewellery and accessories chosen to complement your style.</p></div>
+        <div class="benefit"><div class="symbol">♡</div><b>Made for gifting</b><p>Find a little something for birthdays, celebrations and everyday surprises.</p></div>
+        <div class="benefit"><div class="symbol">✉</div><b>Personal ordering</b><p>Message us to confirm availability, price, delivery and order details.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-inner">
+      <div><div class="brand-name">ASQUARE</div><div class="brand-sub">JEWELLERY AND ACCESSORIES</div><p>Everyday elegance, thoughtfully chosen. Contact us to check product availability and place an order.</p></div>
+      <div class="footer-links"><a href="https://www.instagram.com/asquare.jewellery/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/916301239070" target="_blank" rel="noopener">WhatsApp</a><a href="#shop">Shop collections</a></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> ASQUARE Jewellery And Accessories. All rights reserved.</div>
+    <div class="notice">Before publishing: replace sample products and images, confirm all business policies, and test every contact link. This starter site does not process online payments or track inventory.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
